@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://kfh.com/education"
+           elementFormDefault="qualified"
+           xmlns:tns="http://kfh.com/education"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="GetCoursesRequest" type="tns:GetCoursesRequest"/>
+    <xs:element name="GetCoursesResponse" type="tns:GetCoursesResponse"/>
+
+
+    <xs:complexType name="Course">
+        <xs:sequence>
+            <xs:element name="id" type="xs:long"/>
+            <xs:element name="code" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="description" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="GetCoursesRequest">
+        <xs:sequence/>
+    </xs:complexType>
+
+    <xs:complexType name="GetCoursesResponse">
+        <xs:sequence>
+            <xs:element name="courses" type="tns:Course" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
+
+        <!--<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"-->
+<!--           targetNamespace="http://example.com/courses"-->
+<!--           xmlns:tns="http://example.com/courses"-->
+<!--           elementFormDefault="qualified">-->
+
+<!--    <xs:element name="getCoursesRequest">-->
+<!--        <xs:complexType>-->
+<!--            <xs:sequence>-->
+<!--            </xs:sequence>-->
+<!--        </xs:complexType>-->
+<!--    </xs:element>-->
+
+<!--    <xs:element name="getCoursesResponse">-->
+<!--        <xs:complexType>-->
+<!--            <xs:sequence>-->
+<!--                <xs:element name="courses" type="tns:course" maxOccurs="unbounded" minOccurs="0"/>-->
+<!--            </xs:sequence>-->
+<!--        </xs:complexType>-->
+<!--    </xs:element>-->
+<!--    <xs:complexType name="course">-->
+<!--        <xs:sequence>-->
+<!--            <xs:element name="code" type="xs:string"/>-->
+<!--            <xs:element name="name" type="xs:string"/>-->
+<!--            <xs:element name="description" type="xs:string" minOccurs="0"/>-->
+<!--        </xs:sequence>-->
+<!--    </xs:complexType>-->
+
+
+<!--</xs:schema>-->

@@ -1,0 +1,8 @@
+com\kfh\assessment\soapmock\ws\package-info.class
+com\kfh\assessment\soapmock\ws\GetCoursesResponse.class
+com\kfh\assessment\soapmock\ws\GetCoursesRequest.class
+com\kfh\assessment\soapmock\ws\ObjectFactory.class
+com\kfh\assessment\soapmock\SoapWebServiceConfig.class
+com\kfh\assessment\soapmock\SoapMockApplication.class
+com\kfh\assessment\soapmock\ws\Course.class
+com\kfh\assessment\soapmock\CourseEndpoint.class
